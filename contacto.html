@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<script src="js/sweetalert2.all.min.js"></script>
+	<script src="https://kit.fontawesome.com/500df033a6.js" crossorigin="anonymous"></script>
+	<title>Contacto</title>
+</head>
+<body>
+
+
+	<div class="home">
+		<a href="index.html">
+			<i class="fas fa-home"></i>
+		</a>
+	</div>
+
+<button id="mnocturno"><i class="fas fa-adjust"></i></button>	
+
+	<section class="formulario">
+			<div class="contenedor">
+				<form action="" class="formulario" id="formulario" name="formulario">
+				<div class="contenedor-inputs">
+				<input type="text" name="nombre" placeholder="Nombre">
+				<input type="email" name="correo" placeholder="Correo">
+						
+				<div class="sexo">
+					<input type="radio" name="sexo" id="hombre" value="hombre">
+					<label for="hombre" class="label-radio hombre">Hombre</label>
+							
+					<input type="radio" name="sexo" id="mujer" value="mujer">
+					<label for="mujer" class="label-radio mujer">Mujer</label>
+				</div>
+				<div class="consultas">
+					<p>Consultas y/o sugerencias:</p>
+					<textarea name="consulta" rows="6" required>
+						
+					</textarea>
+				</div>
+						
+				<div class="robot">
+					<input type="checkbox" name="robot" id="robot">
+					<label for="terminos">No soy un robot</label>
+				</div>
+				<ul class="error" id="error"></ul>
+			</div>
+			
+			<input type="button" id="enviar" class="btn" value="Enviar">
+
+			<!--<button class="btn" id="enviar" type="button">Enviar</button>-->
+		</form>	
+				</form>
+			</div>
+		</section>
+
+<script src="js/formulario.js"></script>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/eventos.js"></script>
+<script src="js/nocturno.js"></script>
+	
+</body>
+</html>
